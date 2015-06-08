@@ -22,6 +22,11 @@
 		FAF05B041902F29F00156A80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF05AE31902F29E00156A80 /* UIKit.framework */; };
 		FAF05B0C1902F29F00156A80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAF05B0A1902F29F00156A80 /* InfoPlist.strings */; };
 		FAF05B0E1902F29F00156A80 /* TrakrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF05B0D1902F29F00156A80 /* TrakrTests.m */; };
+		FAF05B1C1902F2B900156A80 /* LocationGrabberBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF05B1B1902F2B900156A80 /* LocationGrabberBackground.m */; };
+		FAF05B291903089A00156A80 /* out60.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF05B251903089A00156A80 /* out60.png */; };
+		FAF05B2A1903089A00156A80 /* out76.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF05B261903089A00156A80 /* out76.png */; };
+		FAF05B2B1903089A00156A80 /* out120.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF05B271903089A00156A80 /* out120.png */; };
+		FAF05B2C1903089A00156A80 /* out152.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF05B281903089A00156A80 /* out152.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,12 @@
 		FAF05B091902F29F00156A80 /* TrakrTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrakrTests-Info.plist"; sourceTree = "<group>"; };
 		FAF05B0B1902F29F00156A80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAF05B0D1902F29F00156A80 /* TrakrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrakrTests.m; sourceTree = "<group>"; };
+		FAF05B1A1902F2B900156A80 /* LocationGrabberBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationGrabberBackground.h; sourceTree = "<group>"; };
+		FAF05B1B1902F2B900156A80 /* LocationGrabberBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationGrabberBackground.m; sourceTree = "<group>"; };
+		FAF05B251903089A00156A80 /* out60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = out60.png; sourceTree = "<group>"; };
+		FAF05B261903089A00156A80 /* out76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = out76.png; sourceTree = "<group>"; };
+		FAF05B271903089A00156A80 /* out120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = out120.png; sourceTree = "<group>"; };
+		FAF05B281903089A00156A80 /* out152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = out152.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +126,8 @@
 		FAF05AE51902F29E00156A80 /* Trakr */ = {
 			isa = PBXGroup;
 			children = (
+				FAF05B1A1902F2B900156A80 /* LocationGrabberBackground.h */,
+				FAF05B1B1902F2B900156A80 /* LocationGrabberBackground.m */,
 				FAF05AEE1902F29E00156A80 /* TkAppDelegate.h */,
 				FAF05AEF1902F29E00156A80 /* TkAppDelegate.m */,
 				FAF05AF11902F29E00156A80 /* Main.storyboard */,
@@ -131,6 +144,10 @@
 		FAF05AE61902F29E00156A80 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FAF05B251903089A00156A80 /* out60.png */,
+				FAF05B261903089A00156A80 /* out76.png */,
+				FAF05B271903089A00156A80 /* out120.png */,
+				FAF05B281903089A00156A80 /* out152.png */,
 				FAF05AE71902F29E00156A80 /* Trakr-Info.plist */,
 				FAF05AE81902F29E00156A80 /* InfoPlist.strings */,
 				FAF05AEB1902F29E00156A80 /* main.m */,
@@ -205,6 +222,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = MagmaStone;
 				TargetAttributes = {
+					FAF05ADB1902F29D00156A80 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					FAF05AFF1902F29F00156A80 = {
 						TestTargetID = FAF05ADB1902F29D00156A80;
 					};
@@ -234,9 +258,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF05B2B1903089A00156A80 /* out120.png in Resources */,
 				FAF05AFB1902F29E00156A80 /* Images.xcassets in Resources */,
 				FAF05AEA1902F29E00156A80 /* InfoPlist.strings in Resources */,
+				FAF05B291903089A00156A80 /* out60.png in Resources */,
 				FAF05AF31902F29E00156A80 /* Main.storyboard in Resources */,
+				FAF05B2A1903089A00156A80 /* out76.png in Resources */,
+				FAF05B2C1903089A00156A80 /* out152.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF05B1C1902F2B900156A80 /* LocationGrabberBackground.m in Sources */,
 				FAF05AEC1902F29E00156A80 /* main.m in Sources */,
 				FAF05AF61902F29E00156A80 /* TkMainViewController.m in Sources */,
 				FAF05AF01902F29E00156A80 /* TkAppDelegate.m in Sources */,
@@ -381,11 +410,12 @@
 		FAF05B121902F29F00156A80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Trakr/Trakr-Prefix.pch";
 				INFOPLIST_FILE = "Trakr/Trakr-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,11 +424,12 @@
 		FAF05B131902F29F00156A80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Trakr/Trakr-Prefix.pch";
 				INFOPLIST_FILE = "Trakr/Trakr-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -463,6 +494,7 @@
 				FAF05B131902F29F00156A80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAF05B141902F29F00156A80 /* Build configuration list for PBXNativeTarget "TrakrTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +503,7 @@
 				FAF05B161902F29F00156A80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

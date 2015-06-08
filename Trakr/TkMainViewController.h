@@ -9,5 +9,5 @@
 #import "TkFlipsideViewController.h"
 
 @interface TkMainViewController : UIViewController <TkFlipsideViewControllerDelegate>
-
+- (void)updateLastLabel:(NSString*)value;
 @end
